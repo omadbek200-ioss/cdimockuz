@@ -3,231 +3,561 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>JK IELTS | Mock Test Platform</title>
+  <title>JK IELTS | Serious Mock Test Platform</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <div class="page-shell">
-    <header class="topbar">
+    <header class="site-header">
       <a class="brand" href="#home" aria-label="JK IELTS home">
-        <span class="brand-mark">
-          <span></span>
-          <span></span>
-          <span></span>
-        </span>
+        <span class="brand-mark">JK</span>
         <span class="brand-copy">
           <strong>JK IELTS</strong>
-          <small>IELTS mock test platform</small>
+          <small>Mock platform for calm, serious preparation</small>
         </span>
       </a>
 
-      <nav class="nav">
-        <a href="#platform">Platform</a>
-        <a href="#preview">Preview</a>
-        <a href="#partners">Partners</a>
-      </nav>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        Menu
+      </button>
+
+      <div class="header-nav" id="site-nav">
+        <nav class="nav">
+          <a href="#platform">Platform</a>
+          <a href="#modules">Modules</a>
+          <a href="#analytics">Analytics</a>
+          <a href="#faq">FAQ</a>
+        </nav>
+        <a class="header-cta" href="#cta">Book a demo</a>
+      </div>
     </header>
 
     <main id="home">
       <section class="hero">
-        <article class="hero-copy card light-card">
-          <span class="eyebrow">IELTS MOCK PLATFORM</span>
-          <h1>Practice in a format that feels ready for the real exam.</h1>
+        <article class="hero-copy">
+          <span class="eyebrow">DIGITAL IELTS EXPERIENCE</span>
+          <h1>Serious IELTS practice, shaped into a calmer and sharper product.</h1>
           <p>
-            JK IELTS gives learners a focused space to practise listening, reading,
-            and writing inside a realistic test-style environment. This first version
-            is designed to present the platform with a clean and premium feel.
+            JK IELTS is designed for centres, tutors, and independent learners who want
+            a clean test-day experience without noisy visuals. The interface feels modern,
+            focused, and ready for real preparation.
           </p>
 
           <div class="hero-actions">
-            <a class="button button-primary" href="#platform">See the platform</a>
-            <a class="button button-secondary" href="#partners">Our partners</a>
+            <a class="button button-primary" href="#platform">Explore platform</a>
+            <a class="button button-secondary" href="#modules">See modules</a>
           </div>
 
-          <div class="partner-card" id="partners">
-            <span class="partner-tag">DEVELOPED BY</span>
-            <div class="partner-body">
-              <div class="partner-mark" aria-hidden="true">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
+          <div class="hero-summary">
+            <article class="summary-card">
+              <strong>Exam-like UI</strong>
+              <p>Students see a familiar structure before test day arrives.</p>
+            </article>
+            <article class="summary-card">
+              <strong>Teacher-ready review</strong>
+              <p>Feedback, timing, and progress can be checked in one clean flow.</p>
+            </article>
+            <article class="summary-card">
+              <strong>Measured growth</strong>
+              <p>Band movement, weak areas, and module history stay visible.</p>
+            </article>
+          </div>
+        </article>
+
+        <article class="hero-stage">
+          <div class="stage-header">
+            <div>
+              <span class="eyebrow eyebrow-dark">TODAY'S FLOW</span>
+              <h2>Quietly premium on the surface, disciplined underneath.</h2>
+            </div>
+            <span class="status-pill">Band target 7.5</span>
+          </div>
+
+          <div class="stage-grid">
+            <div class="stage-card stage-card-strong">
+              <div class="score-ring">
+                <span>7.0</span>
               </div>
               <div>
-                <h2>JK IELTS</h2>
-                <p>A modern digital ecosystem built for serious IELTS preparation.</p>
+                <h3>Current projection</h3>
+                <p>Balanced weekly practice with realistic timing and review checkpoints.</p>
               </div>
             </div>
-          </div>
-        </article>
 
-        <article class="hero-preview card dark-card">
-          <div class="preview-copy">
-            <span class="eyebrow eyebrow-dark">REAL EXAM ENERGY</span>
-            <h2>Learners work inside an interface that already feels familiar from day one.</h2>
-            <p>
-              The flow, timing cues, and screen structure are shaped around real exam
-              habits. It turns practice into an experience that feels closer to test day.
-            </p>
-          </div>
-
-          <div class="os-grid">
-            <div class="os-card">
-              <span class="os-icon"></span>
-              <strong>Windows</strong>
-            </div>
-            <div class="os-card">
-              <span class="os-icon"></span>
-              <strong>macOS</strong>
-            </div>
-          </div>
-
-          <div class="software-frame" aria-hidden="true">
-            <div class="frame-dots">
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-            <div class="frame-layout">
-              <div class="frame-sidebar">
-                <span></span>
-                <span></span>
-                <span></span>
+            <div class="stage-stack">
+              <div class="stage-card">
+                <span class="card-kicker">SESSION QUEUE</span>
+                <ul class="session-list">
+                  <li>
+                    <strong>Listening mock</strong>
+                    <span>40 min</span>
+                  </li>
+                  <li>
+                    <strong>Reading review</strong>
+                    <span>65 min</span>
+                  </li>
+                  <li>
+                    <strong>Writing task 2</strong>
+                    <span>35 min</span>
+                  </li>
+                </ul>
               </div>
-              <div class="frame-content">
-                <div class="frame-panel frame-panel-large"></div>
-                <div class="frame-row">
-                  <div class="frame-panel"></div>
-                  <div class="frame-panel"></div>
+
+              <div class="stage-card">
+                <span class="card-kicker">WEEKLY RHYTHM</span>
+                <div class="mini-chart">
+                  <span style="--value: 82%"></span>
+                  <span style="--value: 68%"></span>
+                  <span style="--value: 90%"></span>
+                  <span style="--value: 74%"></span>
+                  <span style="--value: 88%"></span>
                 </div>
-                <div class="frame-bar"></div>
+                <p class="stage-note">Short sessions, clean review loops, steady progression.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="platform-window" aria-hidden="true">
+            <div class="window-top">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="window-body">
+              <div class="window-sidebar">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <div class="window-main">
+                <div class="window-row">
+                  <div class="window-panel window-panel-hero"></div>
+                  <div class="window-panel"></div>
+                </div>
+                <div class="window-row">
+                  <div class="window-panel"></div>
+                  <div class="window-panel"></div>
+                </div>
+                <div class="window-footer-bar"></div>
               </div>
             </div>
           </div>
         </article>
+      </section>
+
+      <section class="trust-strip" aria-label="Platform qualities">
+        <p>Built to feel focused, not flashy.</p>
+        <div class="trust-pills">
+          <span>Timed full mocks</span>
+          <span>Listening, Reading, Writing, Speaking</span>
+          <span>Teacher notes</span>
+          <span>Band analytics</span>
+          <span>Desktop-ready interface</span>
+        </div>
       </section>
 
       <section class="metrics">
         <div class="metric">
-          <strong>3</strong>
-          <span>core modules</span>
+          <strong>4</strong>
+          <span>complete skill modules</span>
         </div>
         <div class="metric">
-          <strong>100%</strong>
-          <span>exam-focused energy</span>
+          <strong>12+</strong>
+          <span>review touchpoints</span>
         </div>
         <div class="metric">
           <strong>24/7</strong>
-          <span>practice access</span>
+          <span>practice availability</span>
         </div>
       </section>
 
-      <section class="platform" id="platform">
-        <div class="section-copy">
-          <span class="eyebrow">PLATFORM PREVIEW</span>
-          <h2>Premium preparation for the full IELTS journey.</h2>
+      <section class="section" id="platform">
+        <div class="section-heading">
+          <span class="eyebrow">PLATFORM OVERVIEW</span>
+          <h2>A refined landing page that already feels like a real product.</h2>
           <p>
-            These blocks are still an early preview, but the structure is already clear:
-            each module is meant to prepare learners for a more realistic exam experience.
+            The design language stays restrained and useful. Instead of decorative noise,
+            each block explains a real product value: exam familiarity, learning clarity,
+            and operational simplicity for tutors or centres.
           </p>
         </div>
 
-        <div class="preview-grid" id="preview">
-          <article class="preview-card preview-card-blue">
-            <div class="mini-window">
-              <div class="mini-window-top">
-                <span></span>
-                <span></span>
-                <span></span>
-              </div>
-              <div class="mini-window-body">
-                <div class="mini-block mini-block-large"></div>
-                <div class="mini-block"></div>
-                <div class="mini-line"></div>
-              </div>
-            </div>
-            <span class="card-label">SCREENSHOT PLACEHOLDER</span>
-            <h3>Listening Player</h3>
+        <div class="feature-grid">
+          <article class="feature-card">
+            <span class="card-kicker">01</span>
+            <h3>Exam-like interface</h3>
             <p>
-              A familiar listening layout with timing, playback controls, and a structure
-              that reflects the pace of the real exam flow.
+              Learners open a screen that feels organized, quiet, and close to what
+              they expect on test day.
             </p>
           </article>
 
-          <article class="preview-card preview-card-mint">
-            <div class="mini-window">
-              <div class="mini-window-top">
-                <span></span>
-                <span></span>
-                <span></span>
-              </div>
-              <div class="mini-window-body">
-                <div class="mini-block mini-block-large"></div>
-                <div class="mini-block"></div>
-                <div class="mini-line"></div>
-              </div>
-            </div>
-            <span class="card-label">SCREENSHOT PLACEHOLDER</span>
-            <h3>Reading Workspace</h3>
+          <article class="feature-card">
+            <span class="card-kicker">02</span>
+            <h3>Clear module flow</h3>
             <p>
-              A clean split layout designed for focus, reading rhythm, and smooth
-              navigation across longer question sets.
+              Each module keeps its own structure while still feeling like one product,
+              not four disconnected tools.
             </p>
           </article>
 
-          <article class="preview-card preview-card-gold">
-            <div class="mini-window">
-              <div class="mini-window-top">
-                <span></span>
-                <span></span>
-                <span></span>
-              </div>
-              <div class="mini-window-body">
-                <div class="mini-block mini-block-large"></div>
-                <div class="mini-block"></div>
-                <div class="mini-line"></div>
-              </div>
-            </div>
-            <span class="card-label">SCREENSHOT PLACEHOLDER</span>
-            <h3>Writing Screen</h3>
+          <article class="feature-card">
+            <span class="card-kicker">03</span>
+            <h3>Useful analytics</h3>
             <p>
-              A balanced writing area with simple composition space and a calm interface
-              that supports sustained concentration.
+              Progress is shown through calm, readable signals instead of loud dashboards
+              that distract from the learning itself.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <span class="card-kicker">04</span>
+            <h3>Teacher-friendly operations</h3>
+            <p>
+              Notes, assignments, and review moments can be layered in without making the
+              core student experience feel heavy.
             </p>
           </article>
         </div>
       </section>
 
-      <section class="roadmap">
-        <article class="roadmap-card">
-          <span class="eyebrow">WHY JK IELTS</span>
-          <h2>A minimal, premium, and trustworthy first impression.</h2>
+      <section class="section module-lab" id="modules">
+        <div class="section-heading">
+          <span class="eyebrow">INTERACTIVE MODULES</span>
+          <h2>Each skill area gets its own logic, while the product stays visually consistent.</h2>
           <p>
-            This first version works as a focused landing page: brand trust, platform
-            preview, and user value are presented in one clear visual flow.
+            The tabs below make the page feel more alive and also demonstrate how the
+            product can present different experiences without losing coherence.
           </p>
-        </article>
+        </div>
 
-        <article class="roadmap-card dark-roadmap">
-          <div class="roadmap-item">
+        <div class="module-shell">
+          <div class="module-tabs" role="tablist" aria-label="Module tabs">
+            <button class="module-tab is-active" type="button" role="tab" aria-selected="true" aria-controls="panel-listening" data-tab="listening">Listening</button>
+            <button class="module-tab" type="button" role="tab" aria-selected="false" aria-controls="panel-reading" data-tab="reading">Reading</button>
+            <button class="module-tab" type="button" role="tab" aria-selected="false" aria-controls="panel-writing" data-tab="writing">Writing</button>
+            <button class="module-tab" type="button" role="tab" aria-selected="false" aria-controls="panel-speaking" data-tab="speaking">Speaking</button>
+          </div>
+
+          <div class="module-panels">
+            <article class="module-panel is-active" id="panel-listening" data-panel="listening">
+              <div class="module-copy">
+                <span class="card-kicker">LISTENING FLOW</span>
+                <h3>Audio control, pacing cues, and answer rhythm in one focused screen.</h3>
+                <p>
+                  Designed for realistic timing, controlled audio, and smooth navigation
+                  so students can rehearse the pressure of the real session without chaos.
+                </p>
+                <ul class="detail-list">
+                  <li>Time-aware player and section markers</li>
+                  <li>Answer panel that stays readable under pressure</li>
+                  <li>Clean review state after submission</li>
+                </ul>
+              </div>
+              <div class="module-preview module-preview-listening" aria-hidden="true">
+                <div class="preview-wave">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+                <div class="preview-surface">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+            </article>
+
+            <article class="module-panel" id="panel-reading" data-panel="reading" hidden>
+              <div class="module-copy">
+                <span class="card-kicker">READING FLOW</span>
+                <h3>Split reading workspace for longer passages and faster question movement.</h3>
+                <p>
+                  The reading module prioritizes scanning, structured focus, and answer
+                  management so the learner never feels visually overloaded.
+                </p>
+                <ul class="detail-list">
+                  <li>Passage area and question zone remain balanced</li>
+                  <li>Useful spacing for long-form concentration</li>
+                  <li>Answer states are easy to track and revisit</li>
+                </ul>
+              </div>
+              <div class="module-preview module-preview-reading" aria-hidden="true">
+                <div class="preview-columns">
+                  <span></span>
+                  <span></span>
+                </div>
+                <div class="preview-surface">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+            </article>
+
+            <article class="module-panel" id="panel-writing" data-panel="writing" hidden>
+              <div class="module-copy">
+                <span class="card-kicker">WRITING FLOW</span>
+                <h3>Quiet composition space with enough structure to keep writing disciplined.</h3>
+                <p>
+                  Writing needs room, not clutter. The layout allows task reading, drafting,
+                  and timing awareness without stealing attention from the text itself.
+                </p>
+                <ul class="detail-list">
+                  <li>Dedicated task brief and writing area</li>
+                  <li>Word-count and time cues in subtle positions</li>
+                  <li>Review-friendly layout for teacher comments later</li>
+                </ul>
+              </div>
+              <div class="module-preview module-preview-writing" aria-hidden="true">
+                <div class="preview-sheet">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+                <div class="preview-note"></div>
+              </div>
+            </article>
+
+            <article class="module-panel" id="panel-speaking" data-panel="speaking" hidden>
+              <div class="module-copy">
+                <span class="card-kicker">SPEAKING FLOW</span>
+                <h3>A simple recording and prompt format that feels formal, not awkward.</h3>
+                <p>
+                  Speaking practice benefits from clarity. Prompts, timing, and recording
+                  controls are presented with enough presence to feel guided and confident.
+                </p>
+                <ul class="detail-list">
+                  <li>Prompt cards for structured speaking stages</li>
+                  <li>Recorder state and attempt tracking</li>
+                  <li>Built-in room for tutor playback and notes</li>
+                </ul>
+              </div>
+              <div class="module-preview module-preview-speaking" aria-hidden="true">
+                <div class="preview-recorder">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+                <div class="preview-surface">
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section analytics" id="analytics">
+        <div class="analytics-grid">
+          <article class="analytics-copy">
+            <span class="eyebrow">PROGRESS ANALYTICS</span>
+            <h2>Extra functionality without making the interface loud.</h2>
+            <p>
+              This version adds stronger product signals: module switching, analytics layout,
+              FAQ interactions, responsive navigation, and more structured conversion sections.
+            </p>
+
+            <div class="insight-list">
+              <article class="insight-card">
+                <strong>Band movement</strong>
+                <p>Track trends weekly instead of treating every mock as an isolated score.</p>
+              </article>
+              <article class="insight-card">
+                <strong>Weak skill detection</strong>
+                <p>Surface where timing, accuracy, or consistency drops first.</p>
+              </article>
+              <article class="insight-card">
+                <strong>Centre oversight</strong>
+                <p>Give tutors a cleaner way to review student pace and assignment history.</p>
+              </article>
+            </div>
+          </article>
+
+          <article class="analytics-board" aria-hidden="true">
+            <div class="board-head">
+              <strong>Performance snapshot</strong>
+              <span>Last 6 weeks</span>
+            </div>
+            <div class="board-chart">
+              <span style="--bar: 52%"></span>
+              <span style="--bar: 64%"></span>
+              <span style="--bar: 58%"></span>
+              <span style="--bar: 76%"></span>
+              <span style="--bar: 82%"></span>
+              <span style="--bar: 88%"></span>
+            </div>
+            <div class="score-breakdown">
+              <div>
+                <label>Listening</label>
+                <strong>7.5</strong>
+              </div>
+              <div>
+                <label>Reading</label>
+                <strong>7.0</strong>
+              </div>
+              <div>
+                <label>Writing</label>
+                <strong>6.5</strong>
+              </div>
+              <div>
+                <label>Speaking</label>
+                <strong>7.0</strong>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section journey" id="journey">
+        <div class="section-heading">
+          <span class="eyebrow">LEARNING JOURNEY</span>
+          <h2>A clearer path from first diagnostic to confident exam-day readiness.</h2>
+          <p>
+            The site now explains not only what JK IELTS looks like, but how it supports
+            a serious study process from start to finish.
+          </p>
+        </div>
+
+        <div class="journey-grid">
+          <article class="journey-card">
             <strong>01</strong>
-            <p>Introduce the platform through a polished and professional landing page.</p>
-          </div>
-          <div class="roadmap-item">
+            <h3>Diagnose</h3>
+            <p>Run a full mock to establish timing habits, module balance, and likely weak zones.</p>
+          </article>
+          <article class="journey-card">
             <strong>02</strong>
-            <p>In the next step, add real screenshots, pricing, and registration sections.</p>
-          </div>
-          <div class="roadmap-item">
+            <h3>Train</h3>
+            <p>Assign focused sessions with lighter friction and cleaner task-by-task repetition.</p>
+          </article>
+          <article class="journey-card">
             <strong>03</strong>
-            <p>Expand into a full product with admin tools, test flows, and a learner dashboard.</p>
+            <h3>Review</h3>
+            <p>Surface notes, instructor comments, and score trends in a way that stays readable.</p>
+          </article>
+          <article class="journey-card">
+            <strong>04</strong>
+            <h3>Stabilize</h3>
+            <p>Turn irregular practice into a repeatable routine that feels closer to the real exam.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section proof">
+        <div class="proof-grid">
+          <article class="quote-card quote-card-large">
+            <span class="card-kicker">STUDENT FEELING</span>
+            <blockquote>
+              "It feels more serious than a typical practice site. The layout is calm,
+              the timing feels right, and I do not waste attention on design noise."
+            </blockquote>
+            <p>Mock test learner, internal preview feedback</p>
+          </article>
+
+          <div class="proof-stack">
+            <article class="quote-card">
+              <span class="card-kicker">TUTOR VIEW</span>
+              <blockquote>
+                "The strongest part is the restraint. It looks premium without trying too hard."
+              </blockquote>
+            </article>
+
+            <article class="stats-card">
+              <div>
+                <strong>7.5</strong>
+                <span>target-ready interface feel</span>
+              </div>
+              <div>
+                <strong>4</strong>
+                <span>core modules in one product system</span>
+              </div>
+              <div>
+                <strong>0</strong>
+                <span>unnecessary flashy blocks</span>
+              </div>
+            </article>
           </div>
-        </article>
+        </div>
+      </section>
+
+      <section class="section support" id="faq">
+        <div class="support-grid">
+          <article class="faq-block">
+            <span class="eyebrow">COMMON QUESTIONS</span>
+            <h2>Useful answers, hidden inside a simple accordion.</h2>
+
+            <div class="faq-list">
+              <article class="faq-item is-open">
+                <button class="faq-question" type="button" aria-expanded="true">
+                  Can this landing page be turned into a full product site later?
+                </button>
+                <div class="faq-answer">
+                  <p>Yes. The structure now supports future pricing, login, dashboard, and real screenshots without another redesign from scratch.</p>
+                </div>
+              </article>
+
+              <article class="faq-item">
+                <button class="faq-question" type="button" aria-expanded="false">
+                  Can you add real screenshots and a registration flow next?
+                </button>
+                <div class="faq-answer" hidden>
+                  <p>Yes. The new layout already has the right sections for real UI captures, signup buttons, and a clearer conversion path.</p>
+                </div>
+              </article>
+
+              <article class="faq-item">
+                <button class="faq-question" type="button" aria-expanded="false">
+                  Is the design mobile-friendly?
+                </button>
+                <div class="faq-answer" hidden>
+                  <p>Yes. The navigation, hero, module tabs, cards, and FAQ are all adjusted for narrower screens.</p>
+                </div>
+              </article>
+
+              <article class="faq-item">
+                <button class="faq-question" type="button" aria-expanded="false">
+                  Is this intentionally more modest than flashy?
+                </button>
+                <div class="faq-answer" hidden>
+                  <p>Exactly. The design aims for premium restraint: strong spacing, clearer hierarchy, fewer gimmicks, and more confidence.</p>
+                </div>
+              </article>
+            </div>
+          </article>
+
+          <article class="cta-panel" id="cta">
+            <span class="eyebrow">NEXT STEP</span>
+            <h2>Ready to turn JK IELTS into a stronger product presence?</h2>
+            <p>
+              This expanded version already feels more complete. The next step can be
+              real screenshots, pricing, login/signup, instructor workflow, or a real dashboard.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#modules">Review modules</a>
+              <a class="button button-secondary" href="#home">Back to top</a>
+            </div>
+          </article>
+        </div>
       </section>
     </main>
 
-    <footer class="footer">
-      <p>JK IELTS mock platform concept. Initial version ready.</p>
+    <footer class="site-footer">
+      <p>JK IELTS mock platform concept. Expanded landing version with refined structure and interactive sections.</p>
+      <nav class="footer-nav">
+        <a href="#platform">Platform</a>
+        <a href="#modules">Modules</a>
+        <a href="#analytics">Analytics</a>
+        <a href="#faq">FAQ</a>
+      </nav>
     </footer>
   </div>
+  <script src="script.js"></script>
 </body>
 </html>
